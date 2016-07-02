@@ -30,3 +30,6 @@ I think it would really knock their socks off if we could have our clone have so
 
 
 Oh and.....THAAAAANNKKKS :D
+
+## References
+[Reddit's Wiki on their JSON API](https://github.com/reddit/reddit/wiki/JSON)
