@@ -16,7 +16,6 @@ Use the sub-reddit API to achieve the following:
 2. Create a simple client side application and set it up with our current workflow and create the new repo on GitHub.
   * Gulp
   * Sass
-  * jQuery
   * anything else...
 3. When the page loads we need to have the application go out to the API endpoint of your choosing to pull in the current feed via AJAX. 
 4. Dynamically create our feed list with our proposed style from the data received from the API.
