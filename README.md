@@ -44,5 +44,8 @@ Use the sub-reddit API to achieve the following:
 
 I think it would really knock their socks off if we could have our clone have some behavior that Reddit doesn't currently have, like maybe a Twitter type of feed that updates with the latest posts or something. We'll call it Twittet or maybe Redditter...I don't know. That's what I'm paying you for!
 
+You could add features like:
+  - Infinite scrolling
+  - Reddit search engine - get data from any subreddit
 
 Oh and.....THAAAAANNKKKS :D
