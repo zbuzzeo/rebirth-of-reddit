@@ -6,7 +6,7 @@ Super Awesome Co. has just been asked to concept a new Reddit theme. This is sup
 
 Our game plan is to use their subreddit API to create a Reddit clone with our own theme (See the layouts in the layouts directory). I know we don't have a lot of time but we also need to demonstrate that we are up to par with our stack and code quality. We can get the JSON feed of any sub-reddit by changing adding a `.json` extension to the URL.
 
-`Ex. http://reddit.com/r/javascript -> http://reddit.com/r/javascript.json`
+`Ex. http://www.reddit.com/r/javascript -> http://www.reddit.com/r/javascript.json`
 
 ### Objectives
 
@@ -30,11 +30,11 @@ Use the sub-reddit API to achieve the following:
 1. When the page loads we need to have the application go out to the API endpoint of your choosing to pull in the current feed via AJAX.
   - Interaction, Loading Data
     - when "My Boards" is clicked
-      - create an xhr get request to `http://reddit.com/r/MY_FAVORITE_SUBBREDDIT.json`
+      - create an xhr get request to `http://www.reddit.com/r/MY_FAVORITE_SUBBREDDIT.json`
     - when "Random" is clicked
-      - create an xhr get request to `http://reddit.com/r/ANOTHER_SUBBREDDIT.json`
+      - create an xhr get request to `http://www.reddit.com/r/ANOTHER_SUBBREDDIT.json`
     - when "Get the app" is clicked
-      - create an xhr get request to `http://reddit.com/r/ANOTHER_SUBBREDDIT.json`
+      - create an xhr get request to `http://www.reddit.com/r/ANOTHER_SUBBREDDIT.json`
 1. Dynamically create our feed list with our proposed style from the data received from the API.
 1. Again, we have to have a good code demo as well so please use appropriate best practices when building out the app.
 1. Set up your project as a GitHub page so that we can demo your work.
