@@ -1,6 +1,9 @@
-$primary-color: green;
+$primary-color: fc4b23;
 $header-width: 100vw;
 $header-height: 80px;
+$hover-color:  #fc4b23;
+$nav-color: #3a3a3c;
+$nav-text-color: #818285;
 
 @import 'cssReset';
 
@@ -46,7 +49,7 @@ html {
       }
 
       #extraOption:hover {
-        background-color: #fc4b23;
+        background-color: $hover-color;
         border: 0px;
 
         #moreOptions {
@@ -54,12 +57,37 @@ html {
         }
       }
     }
+  }
 
-    #topNav {
-      background-color: black;
-      position: absolute;
-      width: $header-width;
-      height: 160px;
+  #topNav {
+    display: flex;
+    justify-content: center;
+    background-color: $nav-color;
+    width: $header-width;
+    height: $header-height / 1.8;
+
+    #containNavs {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 22%;
+      
+      .navItems, .spacer {
+        transition-duration: 600ms;
+
+        color: $nav-text-color;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.3em;
+        // font-weight: bold;
+      }
+
+      .navItems:hover {
+        color: $hover-color;
+      }
+
+      .spacer {
+        font-size: 1.4em;
+      }
     }
   }
 }

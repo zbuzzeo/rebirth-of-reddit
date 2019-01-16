@@ -80,8 +80,23 @@ html {
       border: 0px; }
       html #header #headerBG #extraOption:hover #moreOptions {
         color: white; }
-    html #header #topNav {
-      background-color: black;
-      position: absolute;
-      width: 100vw;
-      height: 160px; }
+  html #topNav {
+    display: flex;
+    justify-content: center;
+    background-color: #3a3a3c;
+    width: 100vw;
+    height: 44.44444px; }
+    html #topNav #containNavs {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 22%; }
+      html #topNav #containNavs .navItems, html #topNav #containNavs .spacer {
+        transition-duration: 600ms;
+        color: #818285;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.3em; }
+      html #topNav #containNavs .navItems:hover {
+        color: #fc4b23; }
+      html #topNav #containNavs .spacer {
+        font-size: 1.4em; }
