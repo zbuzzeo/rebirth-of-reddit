@@ -1,0 +1,65 @@
+$primary-color: green;
+$header-width: 100vw;
+$header-height: 80px;
+
+@import 'cssReset';
+
+html {
+  background-image: url('../assets/bg.jpg');
+
+  #header {
+    background-color: white;
+    width: $header-width;
+    height: $header-height;
+    #headerBG {
+      #logoWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: $header-width;
+        height: $header-height;
+        background: no-repeat;
+        background-image: url('../assets/header_bg.svg');
+        background-position: center;
+      }
+
+      #plusContainer {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        width: $header-width;
+      }
+
+      #extraOption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.6em;
+        width: 26px;
+        height: 26px;
+        border: 1px solid black;
+
+        #moreOptions {
+          font-size: 2em;
+        }
+      }
+
+      #extraOption:hover {
+        background-color: #fc4b23;
+        border: 0px;
+
+        #moreOptions {
+          color: white;
+        }
+      }
+    }
+
+    #topNav {
+      background-color: black;
+      position: absolute;
+      width: $header-width;
+      height: 160px;
+    }
+  }
+}
