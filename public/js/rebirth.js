@@ -26,6 +26,8 @@ function rebirthModule() {
     for (let i = 1; i <= amount; i++) {
       makeElement(cardContainer, 'div', 'cardBox');
     }
+
+    
   }
 
   generateContainers(24);

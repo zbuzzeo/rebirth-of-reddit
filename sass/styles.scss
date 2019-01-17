@@ -5,7 +5,7 @@ $hover-color:         #fc4b23;
 $hover-color-2:       #ff8b00;
 $nav-color:           #3a3a3c;
 $nav-text-color:      #818285;
-$fade-length: 600ms;
+$fade-length: 500ms;
 $card-gap: 1.6%;
 
 @import 'cssReset';
@@ -45,7 +45,7 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 1.6em;
+        margin-right: 2.4em;
         width: 26px;
         height: 26px;
         border: 1px solid black;
@@ -82,9 +82,11 @@ html {
       align-items: center;
       width: 22%;
       
+      // for media querying, make sure to add PADDING to navItems and spacers
       .navItems, .spacer {
         transition-duration: $fade-length;
 
+        white-space: nowrap;
         color: $nav-text-color;
         font-family: 'Oswald', sans-serif;
         font-size: 1.3em;
@@ -118,7 +120,7 @@ html {
       .cardBox {
         background-color: white;
         box-shadow: $hover-color-2;
-        transition-duration: $fade-length;
+        transition-duration: $fade-length / 2.4;
         flex-basis: 45%;
         margin-top: $card-gap;
         margin-bottom: $card-gap;
@@ -126,7 +128,44 @@ html {
       }
 
       .cardBox:hover {
-        box-shadow:inset 0 0 0 0.4em $hover-color-2;
+        box-shadow:inset 0 0 0 0.3em $hover-color-2;
+      }
+    }
+  }
+
+  #footer {
+    display: flex;
+    background-color: $nav-color;
+    justify-content: center;
+    width: 100vw;
+    height: $header-height / 1.8;
+
+    #socialMediaContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 90px;
+      height: $header-height / 1.8;
+
+      #facebook {
+        width: 44.44px;
+        background: no-repeat center;
+        transition-duration: $fade-length;
+        background-image: url('../assets/facebook_grey.svg');
+      }
+
+      #instagram {
+        width: 44.44px;
+        transition-duration: $fade-length;
+        background: no-repeat center;
+        background-image: url('../assets/instagram_grey.svg');
+      }
+
+      #facebook:hover {
+        background-image: url('../assets/facebook_orange.svg');
+      }
+
+      #instagram:hover {
+        background-image: url('../assets/instagram_orange.svg');
       }
     }
   }

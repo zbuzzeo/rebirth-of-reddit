@@ -68,11 +68,11 @@ html {
       position: absolute;
       width: 100vw; }
     html #header #headerBG #extraOption {
-      transition-duration: 600ms;
+      transition-duration: 500ms;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: 1.6em;
+      margin-right: 2.4em;
       width: 26px;
       height: 26px;
       border: 1px solid black; }
@@ -98,7 +98,8 @@ html {
       align-items: center;
       width: 22%; }
       html #topNav #containNavs .navItems, html #topNav #containNavs .spacer {
-        transition-duration: 600ms;
+        transition-duration: 500ms;
+        white-space: nowrap;
         color: #818285;
         font-family: 'Oswald', sans-serif;
         font-size: 1.3em; }
@@ -121,10 +122,35 @@ html {
       html #feed #cardContainer .cardBox {
         background-color: white;
         box-shadow: #ff8b00;
-        transition-duration: 600ms;
+        transition-duration: 208.33333ms;
         flex-basis: 45%;
         margin-top: 1.6%;
         margin-bottom: 1.6%;
         height: 20vw; }
       html #feed #cardContainer .cardBox:hover {
-        box-shadow: inset 0 0 0 0.4em #ff8b00; }
+        box-shadow: inset 0 0 0 0.3em #ff8b00; }
+  html #footer {
+    display: flex;
+    background-color: #3a3a3c;
+    justify-content: center;
+    width: 100vw;
+    height: 44.44444px; }
+    html #footer #socialMediaContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 90px;
+      height: 44.44444px; }
+      html #footer #socialMediaContainer #facebook {
+        width: 44.44px;
+        background: no-repeat center;
+        transition-duration: 500ms;
+        background-image: url("../assets/facebook_grey.svg"); }
+      html #footer #socialMediaContainer #instagram {
+        width: 44.44px;
+        transition-duration: 500ms;
+        background: no-repeat center;
+        background-image: url("../assets/instagram_grey.svg"); }
+      html #footer #socialMediaContainer #facebook:hover {
+        background-image: url("../assets/facebook_orange.svg"); }
+      html #footer #socialMediaContainer #instagram:hover {
+        background-image: url("../assets/instagram_orange.svg"); }
