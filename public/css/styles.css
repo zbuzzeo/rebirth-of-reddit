@@ -94,11 +94,13 @@ html {
     z-index: 4; }
     html #topNav #containNavs {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       width: 22%; }
       html #topNav #containNavs .navItems, html #topNav #containNavs .spacer {
         transition-duration: 500ms;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
         white-space: nowrap;
         color: #818285;
         font-family: 'Oswald', sans-serif;
@@ -124,13 +126,13 @@ html {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        flex-basis: 45%;
+        flex-basis: 46%;
         background-color: white;
         box-shadow: #ff8b00;
         transition-duration: 208.33333ms;
         margin-top: 1.6%;
         margin-bottom: 1.6%;
-        height: 20vw; }
+        height: 20.5vw; }
         html #feed #cardContainer .cardBox .postThumbnail, html #feed #cardContainer .cardBox .postTitle, html #feed #cardContainer .cardBox .postDetails, html #feed #cardContainer .cardBox .postPreview {
           margin-top: 0.3em;
           margin-bottom: 0.3em; }
@@ -138,18 +140,24 @@ html {
           overflow: hidden;
           text-overflow: ellipsis;
           font-family: 'Lato', sans-serif; }
-        html #feed #cardContainer .cardBox .postThumbnail, html #feed #cardContainer .cardBox .postTitle, html #feed #cardContainer .cardBox .postDetails, html #feed #cardContainer .cardBox .postPreview {
-          width: 97.1%;
+        html #feed #cardContainer .cardBox .postThumbnail {
+          background: no-repeat;
+          background-position: center;
+          background-size: contain;
+          background-image: url("https://pmcvariety.files.wordpress.com/2014/10/reddit-logo.jpg");
+          width: 93%;
           height: 45%; }
         html #feed #cardContainer .cardBox .postTitle {
-          width: 97.1%;
-          height: 2em;
-          font-size: 1.6em; }
+          font-size: 1.6em;
+          width: 93%;
+          height: 2em; }
         html #feed #cardContainer .cardBox .postDetails {
-          width: 97.1%;
+          color: #818285;
+          font-size: 0.8em;
+          width: 93%;
           height: 1em; }
         html #feed #cardContainer .cardBox .postPreview {
-          width: 97.1%;
+          width: 93%;
           height: 5em; }
       html #feed #cardContainer .cardBox:hover {
         box-shadow: inset 0 0 0 0.3em #ff8b00; }
