@@ -110,7 +110,7 @@ html {
   html #feed {
     display: flex;
     justify-content: center;
-    margin-top: 3.4em;
+    margin-top: 3.6em;
     width: 100vw;
     height: fit-content; }
     html #feed #cardContainer {
@@ -120,13 +120,34 @@ html {
       width: 35%;
       height: fit-content; }
       html #feed #cardContainer .cardBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 45%;
         background-color: white;
         box-shadow: #ff8b00;
         transition-duration: 208.33333ms;
-        flex-basis: 45%;
         margin-top: 1.6%;
         margin-bottom: 1.6%;
         height: 20vw; }
+        html #feed #cardContainer .cardBox .postThumbnail {
+          background-color: hotpink;
+          width: 97.1%;
+          height: 45%; }
+        html #feed #cardContainer .cardBox .postTitle {
+          background-color: lightblue;
+          width: 97.1%;
+          height: 2em;
+          font-size: 2em; }
+        html #feed #cardContainer .cardBox .postDetails {
+          background-color: lightgreen;
+          width: 97.1%;
+          height: 1.4em; }
+        html #feed #cardContainer .cardBox .postPreview {
+          background-color: lightsalmon;
+          width: 97.1%;
+          height: 7em; }
       html #feed #cardContainer .cardBox:hover {
         box-shadow: inset 0 0 0 0.3em #ff8b00; }
   html #footer {

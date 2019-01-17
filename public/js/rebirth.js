@@ -26,9 +26,19 @@ function rebirthModule() {
     for (let i = 1; i <= amount; i++) {
       makeElement(cardContainer, 'div', 'cardBox');
     }
+  }
 
+  const formatCards = () => {
+    const cardBoxes = document.querySelectorAll('.cardBox');
     
+    cardBoxes.forEach(box => {
+      makeElement(box, 'img', 'postThumbnail');
+      makeElement(box, 'div', 'postTitle');
+      makeElement(box, 'div', 'postDetails');
+      makeElement(box, 'div', 'postPreview');
+    });
   }
 
   generateContainers(24);
+  formatCards();
 })();

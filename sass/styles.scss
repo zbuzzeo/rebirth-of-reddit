@@ -1,12 +1,16 @@
 $primary-color: fc4b23;
-$header-width: 100vw;
-$header-height: 80px;
 $hover-color:         #fc4b23;
 $hover-color-2:       #ff8b00;
 $nav-color:           #3a3a3c;
 $nav-text-color:      #818285;
+
+$header-width: 100vw;
+$header-height: 80px;
 $fade-length: 500ms;
+
 $card-gap: 1.6%;
+$card-slot-width: 97.1%;
+$card-font-size: 1.4em;
 
 @import 'cssReset';
 
@@ -106,7 +110,7 @@ html {
   #feed {
     display: flex;
     justify-content: center;
-    margin-top: 3.4em;
+    margin-top: 3.6em;
     width: 100vw;
     height: fit-content;
 
@@ -118,13 +122,43 @@ html {
       height: fit-content;
 
       .cardBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 45%;
+
         background-color: white;
         box-shadow: $hover-color-2;
         transition-duration: $fade-length / 2.4;
-        flex-basis: 45%;
         margin-top: $card-gap;
         margin-bottom: $card-gap;
         height: 20vw;
+
+        .postThumbnail {
+          background-color: hotpink;
+          width: $card-slot-width;
+          height: 45%;
+        }
+
+        .postTitle {
+          background-color: lightblue;
+          width: $card-slot-width;
+          height: 2em;
+          font-size: 2em;
+        }
+
+        .postDetails {
+          background-color: lightgreen;
+          width: $card-slot-width;
+          height: $card-font-size;
+        }
+
+        .postPreview {
+          background-color: lightsalmon;
+          width: $card-slot-width;
+          height: ($card-font-size) * 5;
+        }
       }
 
       .cardBox:hover {
